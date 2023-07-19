@@ -27,25 +27,6 @@ const App = () => {
         setOpen(false);
     };
 
-  // const savedTasks = localStorage.getItem('tasks') ?
-  // JSON.parse(localStorage.getItem('tasks')) : []
-
-  // useEffect(() => {
-  //   localStorage.setItem('tasks', JSON.stringify(tasks))
-  // }, [tasks])
-
-  // let configShowCompleted = ''
-  
-  // if(localStorage.getItem('showCompleted') === null) {
-  //   configShowCompleted = true
-  // } else {
-  //   configShowCompleted = localStorage.getItem('showCompleted') === 'true'
-  // }
-
-  // useEffect(() => {
-  //   localStorage.setItem('showCompleted', showCompleted.toString())
-  // }, [showCompleted])
-
   return (
   <>
   <div className={`${theme} wrapper`}>

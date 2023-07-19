@@ -7,12 +7,11 @@ import { ProviderTasks } from './context/contextTasks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* Debemos encerrar la app con el componente del contexto */}
+  
     <ProviderTasks>
         <App />
     </ProviderTasks>
-  </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

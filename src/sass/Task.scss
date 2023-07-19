@@ -1,6 +1,11 @@
-.tasklist__item:nth-child(1) {
-    border-radius: .4rem .4rem 0 0;
+.tasklist {
+    .item-container:nth-child(1) {
+        .tasklist__item:nth-child(1) {
+            border-radius: .4rem .4rem 0 0;
+        }
+    }
 }
+
 .tasklist__item {
     display: flex;
     align-items: center;

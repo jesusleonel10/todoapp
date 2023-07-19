@@ -1,4 +1,4 @@
-.tasklist__item:nth-child(1) {
+.tasklist .item-container:nth-child(1) .tasklist__item:nth-child(1) {
   border-radius: 0.4rem 0.4rem 0 0;
 }
 
