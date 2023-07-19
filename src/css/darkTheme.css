@@ -1,0 +1,137 @@
+/* --- Tema Oscuro --- */
+.dark {
+  background-color: hsl(235, 21%, 11%);
+  background-image: url("./../images/bg-mobile-dark.jpg");
+}
+@media (min-width: 23.4375rem) {
+  .dark {
+    background-image: url("./../images/bg-desktop-dark.jpg");
+  }
+}
+.dark .input-container {
+  background-color: hsl(235, 24%, 19%);
+}
+.dark .input-container svg {
+  fill: hsl(233, 14%, 35%);
+}
+.dark .input-container svg:hover {
+  fill: hsl(234, 39%, 85%);
+}
+.dark .input-container .input-task {
+  color: hsl(234, 39%, 85%);
+}
+.dark .tasklist__item {
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+}
+.dark .tasklist__item .tasklist__wrapper .formedit__input {
+  background-color: hsl(235, 24%, 19%);
+  color: #fff;
+}
+.dark .tasklist__item .tasklist__text {
+  color: hsl(234, 39%, 85%);
+}
+.dark .tasklist__item .tasklist__text del {
+  color: hsl(236, 9%, 61%);
+}
+.dark .tasklist__item svg {
+  fill: hsl(233, 14%, 35%);
+}
+.dark .tasklist__item svg:hover {
+  fill: hsl(234, 39%, 85%);
+}
+.dark .tasklist__item .tasklist__btn svg {
+  fill: hsl(233, 14%, 35%);
+  cursor: pointer;
+}
+.dark .tasklist__item .tasklist__btn svg:hover {
+  color: hsl(235, 19%, 35%);
+  fill: hsl(234, 39%, 85%);
+}
+.dark .footer {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(236, 9%, 61%);
+  box-shadow: 0px 17px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.dark .footer .clear-items:hover {
+  color: hsl(234, 39%, 85%);
+}
+.dark .filters {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(236, 9%, 61%);
+  box-shadow: 0px 17px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.dark .filters .filters__radios input:checked + label {
+  color: hsl(220, 98%, 61%);
+  font-weight: bold;
+}
+.dark .filters .filters__radios label:hover {
+  color: hsl(234, 39%, 85%);
+}
+.dark .drag-drop {
+  color: hsl(236, 9%, 61%);
+}
+.dark .list-task__message {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(236, 9%, 61%);
+}
+
+/* --- Tema Claro --- */
+.light {
+  background-color: hsl(236, 33%, 92%);
+  background-image: url("./../images/bg-mobile-light.jpg");
+}
+@media (min-width: 23.4375rem) {
+  .light {
+    background-image: url("./../images/bg-desktop-light.jpg");
+  }
+}
+.light .input-container {
+  background-color: #fff;
+}
+.light .input-container .input-task {
+  color: hsl(235, 19%, 35%);
+}
+.light .tasklist__item {
+  background-color: #fff;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+}
+.light .tasklist__item .tasklist__text {
+  color: hsl(235, 19%, 35%);
+}
+.light .tasklist__item .tasklist__text del {
+  color: hsl(236, 9%, 61%);
+}
+.light .tasklist__item .tasklist__btn svg {
+  cursor: pointer;
+}
+.light .tasklist__item .tasklist__btn svg:hover {
+  color: hsl(235, 19%, 35%);
+}
+.light .footer {
+  background-color: #fff;
+  color: hsl(236, 9%, 61%);
+  box-shadow: 0px 17px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.light .footer .clear-items:hover {
+  color: hsl(235, 19%, 35%);
+}
+.light .filters {
+  background-color: #fff;
+  color: hsl(236, 9%, 61%);
+  box-shadow: 0px 17px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.light .filters .filters__radios input:checked + label {
+  color: hsl(220, 98%, 61%);
+  font-weight: bold;
+}
+.light .filters .filters__radios label:hover {
+  color: hsl(235, 19%, 35%);
+}
+.light .drag-drop {
+  color: hsl(236, 9%, 61%);
+}
+.light .list-task__message {
+  background-color: #fff;
+  color: hsl(236, 9%, 61%);
+}/*# sourceMappingURL=darkTheme.css.map */

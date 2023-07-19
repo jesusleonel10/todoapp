@@ -1,0 +1,171 @@
+/* --- Tema Oscuro --- */
+
+.dark {
+    background-color: hsl(235, 21%, 11%);
+    background-image: url('./../images/bg-mobile-dark.jpg');
+    @media (min-width: 23.4375rem) {
+        background-image: url('./../images/bg-desktop-dark.jpg');
+    }
+    .input-container {
+        background-color: hsl(235, 24%, 19%);
+        svg {
+            fill: hsl(233, 14%, 35%);
+            
+            &:hover {
+                fill: hsl(234, 39%, 85%);
+            }
+        }
+        .input-task {
+            color: hsl(234, 39%, 85%);
+        }
+    }
+    .tasklist__item {
+        background-color: hsl(235, 24%, 19%);
+        border-bottom: 1px solid hsl(237, 14%, 26%);
+        .tasklist__wrapper {
+            .formedit__input {
+                background-color: hsl(235, 24%, 19%);
+                color: #fff;
+            }
+        }
+        .tasklist__text {
+            color: hsl(234, 39%, 85%);
+            del {
+                color: hsl(236, 9%, 61%);
+            }
+        }
+        svg {
+            fill: hsl(233, 14%, 35%);
+            
+            &:hover {
+                fill: hsl(234, 39%, 85%);
+            }
+        }
+        .tasklist__btn {
+            svg {
+                fill: hsl(233, 14%, 35%);
+                cursor: pointer;
+                &:hover {
+                    color: hsl(235, 19%, 35%);
+                    fill: hsl(234, 39%, 85%);
+                }
+            }
+        }
+    }
+    .footer {
+        background-color: hsl(235, 24%, 19%);
+        color: hsl(236, 9%, 61%);
+        box-shadow: 0px 17px 15px -3px rgba(0,0,0,0.1);
+
+        .clear-items {
+            &:hover {
+                color: hsl(234, 39%, 85%);
+            }
+        }
+    }
+
+    .filters {
+        background-color: hsl(235, 24%, 19%);
+        color: hsl(236, 9%, 61%);
+        box-shadow: 0px 17px 15px -3px rgba(0,0,0,0.1);
+
+        .filters__radios {
+            input {
+                &:checked + label {
+                    color: hsl(220, 98%, 61%);
+                    font-weight: bold;
+                }
+            }
+            label {
+                &:hover {
+                    color: hsl(234, 39%, 85%);
+                }
+
+            }
+        }
+    }
+    .drag-drop {
+        color: hsl(236, 9%, 61%);
+    }
+
+    .list-task__message {
+        background-color: hsl(235, 24%, 19%);
+        color: hsl(236, 9%, 61%);
+    }
+}
+
+
+/* --- Tema Claro --- */
+.light {
+    background-color: hsl(236, 33%, 92%);
+    background-image: url('./../images/bg-mobile-light.jpg');
+    @media (min-width: 23.4375rem) {
+        background-image: url('./../images/bg-desktop-light.jpg');
+    }
+    .input-container {
+        background-color: #fff;
+        .input-task {
+            color: hsl(235, 19%, 35%);
+        }
+    }
+    .tasklist__item {
+        background-color: #fff;
+        border-bottom: 1px solid hsl(236, 33%, 92%);
+        .tasklist__text {
+            color: hsl(235, 19%, 35%);
+            del {
+                color: hsl(236, 9%, 61%);
+            }
+        }
+        .tasklist__btn {
+            svg {
+                cursor: pointer;
+                &:hover {
+                    color: hsl(235, 19%, 35%);
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: #fff;
+        color: hsl(236, 9%, 61%);
+        box-shadow: 0px 17px 15px -3px rgba(0,0,0,0.1);
+
+        .clear-items {
+            &:hover {
+                color: hsl(235, 19%, 35%);
+            }
+        }
+    }
+
+    .filters {
+        background-color: #fff;
+        color: hsl(236, 9%, 61%);
+        box-shadow: 0px 17px 15px -3px rgba(0,0,0,0.1);
+
+        .filters__radios {
+            input {
+                &:checked + label {
+                    color: hsl(220, 98%, 61%);
+                    font-weight: bold;
+                }
+            }
+
+            label {
+                &:hover {
+                    color: hsl(235, 19%, 35%);
+                }
+            }
+        }
+    }
+
+    .drag-drop {
+        color: hsl(236, 9%, 61%);
+    }
+
+    .list-task__message {
+        background-color: #fff;
+        color: hsl(236, 9%, 61%);
+    }
+}

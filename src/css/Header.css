@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0 2rem;
+}
+
+h1 {
+  color: #fff;
+  letter-spacing: 1rem;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+button {
+  all: unset;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,28 @@
+.form {
+  margin-bottom: 1.2rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  height: 3.4375rem;
+  box-shadow: 0px 26px 15px 0px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+.input-container .input-task {
+  all: unset;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.input-container button {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.input-container button svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}/*# sourceMappingURL=Input.css.map */

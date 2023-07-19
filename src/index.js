@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ProviderTasks } from './context/contextTasks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Debemos encerrar la app con el componente del contexto */}
+    <ProviderTasks>
+        <App />
+    </ProviderTasks>
   </React.StrictMode>
 );
 
