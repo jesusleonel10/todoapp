@@ -39,35 +39,39 @@ const Task = ({task, showAlert}) => {
     return (
     <>
         <li className='tasklist__item'>
-            {
-                task.completed ?
-                    //Muestro uno u otro icono dependiendo si esta marcado como completado
-                    //Al hacer click envio a la funcion el id para guardar si esta completada o no
-                    <>
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 512 512"
-                        className='tasklist__icon shape'
-                        onClick={() => toggleCompleted(task.id, changeTasks, tasks)}
-                    >
-                        <defs>
-                            <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
-                                <stop offset="0%" stopColor="var(--color-stop)" />
-                                <stop offset="30%" stopColor="var(--color-stop)" />
-                                <stop offset="100%" stopColor="var(--color-bot)" />
-                            </linearGradient>
-                        </defs>
-                    <path className="gradient-bg" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
-                    </>
-                    :
-                    <PanoramaFishEyeIcon 
-                        sx={{color: 'hsl(236, 9%, 61%);'}}
-                        className='tasklist__icon tasklist__iconnocheck'
-                        onClick={() => toggleCompleted(task.id, changeTasks, tasks)}
-                    />
-            
-            }
-            
+                    <label htmlFor={task.id}>
+                        {
+                //Muestro uno u otro icono dependiendo si esta marcado como completado
+                //Al hacer click envio a la funcion el id para guardar si esta completada o no
+                        task.completed ?
+                        <div className='checkbox'>
+                            <input type="checkbox" id={task.id} onChange={() => toggleCompleted(task.id, changeTasks, tasks)}/>
+                            <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 512 512"
+                            className='tasklist__icon shape'
+                            
+                            >
+                            <defs>
+                                <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                                    <stop offset="0%" stopColor="var(--color-stop)" />
+                                    <stop offset="30%" stopColor="var(--color-stop)" />
+                                    <stop offset="100%" stopColor="var(--color-bot)" />
+                                </linearGradient>
+                            </defs>
+                            <path className="gradient-bg" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/>
+                        </svg>
+                        </div>
+                        :
+                        <div>
+                            <input type="checkbox" id={task.id} onChange={() => toggleCompleted(task.id, changeTasks, tasks)}/>
+                            <PanoramaFishEyeIcon 
+                                sx={{color: 'hsl(236, 9%, 61%);'}}
+                                className='tasklist__icon tasklist__iconnocheck'
+                            />
+                        </div>
+                        }
+                    </label>
             <div className='tasklist__wrapper'>
                 {
                     //Si dio click para editar, mostramos el formulario
@@ -88,6 +92,7 @@ const Task = ({task, showAlert}) => {
                         </button>
                     </form>
                     :
+                    //Mostramos el texto de la tarea
                     <div className='tasklist__text'>
                         {task.completed ? <del>{task.text}</del> : task.text}
                     </div>

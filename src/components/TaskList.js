@@ -111,7 +111,6 @@ return (
             )}
             </Droppable>
         </DragDropContext>
-            
         </ul>
     </div>
     );

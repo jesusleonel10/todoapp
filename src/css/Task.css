@@ -35,6 +35,11 @@
   --color-stop: hsl(192, 100%, 67%);
   --color-bot: hsl(280, 87%, 65%);
 }
+.tasklist__item input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 1;
+}
 .tasklist__item .tasklist__iconnocheck:hover {
   color: hsl(235, 19%, 35%);
 }
