@@ -13,9 +13,13 @@ h1 {
     font-size: 1.8rem;
 }
 
+
 button {
-    all: unset;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-}
+        all: unset;
+        width: 2rem;
+        height: 2rem;
+        svg {
+            cursor: pointer;
+        }
+    }
+

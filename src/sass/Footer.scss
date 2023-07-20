@@ -16,10 +16,8 @@
     margin-bottom: 1.2rem;
     border-radius: 0 0 .4rem .4rem ;
     transition: all .3s ease;
-
     .clear-items {
         width: auto;
-        
     }
 }
 .filters {
@@ -44,9 +42,7 @@
                 position: absolute;
                 right: 0;
             }
-            label {
-                cursor: pointer;
-            }   
+            
     }
 }
 
@@ -60,6 +56,15 @@
         grid-row: 1;
         grid-column: 1;
         justify-self: center;
+        box-shadow: none !important;
+        .filters__radios {
+            label {
+                cursor: pointer;
+            }   
+        }
+   }
+   .clear-items {
+        cursor: pointer;
    }
 }
 

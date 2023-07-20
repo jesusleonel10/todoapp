@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import { ContextTasks } from './../context/contextTasks';
-import Task from './Task'
-import './../css/TaskList.css'
+import Task from './Task';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import './../css/TaskList.css';
 
 const TaskList = ({handleClick}) => {
     const {tasks, changeTasks, filter, setTypeAlert} = useContext(ContextTasks)
@@ -102,7 +102,9 @@ return (
                                 return null
                                 })
                         :
-                             <div className='list-task__message'>~ No tasks added ~</div>
+                            <div className='list-task__message'>
+                               ~ Add tasks to your list ~
+                            </div>
                     }
                     {provided.placeholder}
                 </div>

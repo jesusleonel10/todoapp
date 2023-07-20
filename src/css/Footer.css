@@ -45,9 +45,6 @@
   position: absolute;
   right: 0;
 }
-.filters .filters__radios label {
-  cursor: pointer;
-}
 
 .drag-drop {
   font-size: 0.8rem;
@@ -59,5 +56,12 @@
     grid-row: 1;
     grid-column: 1;
     justify-self: center;
+    box-shadow: none !important;
+  }
+  .filters .filters__radios label {
+    cursor: pointer;
+  }
+  .clear-items {
+    cursor: pointer;
   }
 }/*# sourceMappingURL=Footer.css.map */

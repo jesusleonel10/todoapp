@@ -63,6 +63,7 @@ const Input = ({handleClick}) => {
                         placeholder='Create a new todo...'
                         value={inputTask}
                         onChange={(e) => handleInput(e)}
+                        name='input-task'
                     />
                 </div>
             </form>

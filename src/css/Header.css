@@ -17,5 +17,7 @@ button {
   all: unset;
   width: 2rem;
   height: 2rem;
+}
+button svg {
   cursor: pointer;
 }/*# sourceMappingURL=Header.css.map */

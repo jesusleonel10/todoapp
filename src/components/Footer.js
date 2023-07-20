@@ -42,7 +42,7 @@ const Footer = ({handleClick}) => {
                 <button className='clear-items'
                     onClick={() => cleanCompleted()}
                 >
-                    Clear Completed
+                    <span>Clear Completed</span>
                 </button>
             </div>
             <div className='filters'>
