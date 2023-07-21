@@ -5,7 +5,7 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import './../css/TaskList.css';
 
 const TaskList = ({handleClick}) => {
-    const {tasks, changeTasks, filter, setTypeAlert} = useContext(ContextTasks)
+    const {tasks, changeTasks, filter, setTypeAlert} = useContext(ContextTasks);
 
     //Funcion para recibir el tipo de alerta desde task
     const showAlert = (color, text) => {

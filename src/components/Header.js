@@ -7,7 +7,7 @@ import { ContextTasks } from './../context/contextTasks';
 
 const Header = () => {
     //Contexto del tema
-    const {theme, setTheme} = useContext(ContextTasks)
+    const {theme, setTheme} = useContext(ContextTasks);
 
     //Funcion para cambiar el valor del tema actual
     const toggleTheme = () => {

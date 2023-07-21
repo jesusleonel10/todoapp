@@ -8,17 +8,17 @@ import './../css/Input.css';
 el primero con todas las tareas, el segundo la funcion que agrega las nuevas */
 const Input = ({handleClick}) => {
     /* Contextos de las tareas y las alertas */
-    const {tasks, changeTasks, setTypeAlert} = useContext(ContextTasks)
+    const {tasks, changeTasks, setTypeAlert} = useContext(ContextTasks);
 
     //Estado para obtener el valor del input y su funcion para cambiar dicho valor
-    const [inputTask, setInputTask] = useState('')
+    const [inputTask, setInputTask] = useState('');
     //Cambio el estado enviando el value del input
     const handleInput = (e) => {
-        setInputTask(e.target.value)
+        setInputTask(e.target.value);
     }
     //Confirmo si el input esta vacio
     const isEmpty = (value) => {
-        return value === ''
+        return value === '';
     } 
 
     //Aqui guardamos la nueva tarea
@@ -26,7 +26,7 @@ const Input = ({handleClick}) => {
         e.preventDefault();
         
         if(isEmpty(inputTask)) {
-            setTypeAlert({color: 'error', text:'Task must not be empty'})
+            setTypeAlert({color: 'error', text:'Task must not be empty'});
             handleClick(true);
         }
         else {

@@ -24,10 +24,6 @@
         visibility: visible;
     }
 
-    .tasklist__icon {
-        cursor: pointer;
-    }
-
     .shape {
         width:1.4rem;
         height:1.4rem;
@@ -91,6 +87,12 @@
         gap: .7rem;
         visibility: hidden;
         
+    }
+}
+
+@media (min-width:992px) {
+    .tasklist__icon {
+        cursor: pointer;
     }
 }
 

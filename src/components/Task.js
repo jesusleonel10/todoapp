@@ -5,19 +5,18 @@ import EditIcon from '@mui/icons-material/Edit';
 import ClearIcon from '@mui/icons-material/Clear';
 import SaveRoundedIcon from '@mui/icons-material/SaveRounded';
 
-
-import {toggleCompleted, editTask, deleteTask} from './../functions/allFunctions'
+import {toggleCompleted, editTask, deleteTask} from './../functions/allFunctions';
 import './../css/Task.css'
 
 const Task = ({task, showAlert}) => {
-    const {tasks, changeTasks} = useContext(ContextTasks)
+    const {tasks, changeTasks} = useContext(ContextTasks);
 
     /* Editar y borrar tareas */
     //Bandera para saber si se editara la tarea al hacer click
     const [editingTask, setEditingTask] = useState(false);
 
     //Obtengo la tarea actual, para luego actualizarla
-    const [newTask, setNewTask] = useState(task.text)
+    const [newTask, setNewTask] = useState(task.text);
 
     //Confirmo si el input esta vacio
     const isEmpty = (value) => {
@@ -102,26 +101,33 @@ const Task = ({task, showAlert}) => {
             <div className='tasklist__btn'>
                 {
                     !editingTask ?
-                    <EditIcon
-                        sx={{color: 'hsl(236, 9%, 61%);'}}
-                        className='tasklist__icon tasklist__iconedit'
-                        onClick={() => {
-                            setEditingTask(!editingTask);
-                        }}
-                        titleAccess='Edit Task'
-
-                    /> : ""
+                        <button 
+                            className='tasklist__icon'
+                            onClick={() => {
+                                setEditingTask(!editingTask);
+                            }}
+                            titleaccess='Edit Task'
+                        >
+                            <EditIcon
+                                sx={{color: 'hsl(236, 9%, 61%);'}}
+                                className='tasklist__iconedit'             
+                                /> 
+                        </button>
+                    : ""
                 }
-                <ClearIcon
-                    sx={{color: 'hsl(236, 9%, 61%);'}}
-                    className='tasklist__icon tasklist__icondelete'
+                <button
+                    className='tasklist__icon'
                     onClick={() => {
                         deleteTask(task.id, changeTasks, tasks);
                         showAlert('success', 'Task Deleted');
                     }}
-                    titleAccess='Deleted task'
-
-                />
+                    titleaccess='Deleted task'
+                >
+                    <ClearIcon
+                        sx={{color: 'hsl(236, 9%, 61%);'}}
+                        className='tasklist__icondelete'
+                    />
+                </button>
             </div>
         </li>
     </>
