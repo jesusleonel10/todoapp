@@ -5,11 +5,8 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,11 +29,7 @@ Users will be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![](./screenshot.png)
 
 ## My process
 
