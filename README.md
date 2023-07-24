@@ -41,5 +41,6 @@ Users will be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Material UI v5](https://mui.com/material-ui/)
+- [Material UI v5](https://mui.com/material-ui/) - Icons and alerts
 - [uuid](https://github.com/uuidjs/uuid/)
+- [React-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) - Drag and drop
